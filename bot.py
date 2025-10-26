@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 # ⚠️ ЗАМЕНИТЕ URL НА ВАШ VERCEL URL!
 TOKEN = os.environ.get('BOT_TOKEN', "8273729657:AAF0XR0g4fX7J3k9DVuW4Bfe5t5KafiwWQ8")
-WEBAPP_URL = os.environ.get('WEBAPP_URL', "https://miner-frontend1-pejw.vercel.app")
+WEBAPP_URL = os.environ.get('WEBAPP_URL', "https://miner-frontend1.vercel.app")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user = update.effective_user
@@ -88,4 +88,5 @@ def main():
         raise
 
 if __name__ == '__main__':
+
     main()
